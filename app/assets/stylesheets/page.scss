@@ -1,0 +1,176 @@
+$color1: white;
+$color2: grey;
+
+body {
+  color: $color1;
+}
+#background {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+
+  img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    width: 100%;
+    height: auto;
+  }
+}
+nav {
+  width: 100%;
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+padding: 0;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 10px;
+
+      a {
+        color: $color2;
+        text-decoration: none;
+      }
+      a:hover{
+        color:$color1;
+      }
+    }
+  }
+}
+
+
+header {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
+}
+h2{
+  border-bottom: 1px solid $color2;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+
+}
+main {
+  width: 1100px;
+  margin: auto
+}
+
+////////////// HOME
+div.sstitle{
+  width:100%;
+  position: relative;
+  height: 50px;
+  h3{line-height: 50px;
+
+    margin: 0px;
+  }
+  a{position: absolute;
+    right: 0px;
+    line-height: 50px;
+    top: 0px;
+    text-decoration: none;
+    color: $color2;}
+}
+table{
+  width: 100%;
+}
+
+table.videos{
+  margin-bottom: 70px;
+border-top:1px solid $color2;
+border-bottom:1px solid $color2;
+td{
+
+  img {
+    border: 1px solid red;
+    display: block;
+    height: 200px;
+    width: 100%;
+
+  }
+  p{
+    border: 1px solid green;
+    margin: 0px;
+    margin-top: 5px;
+  }
+
+}td:nth-child(1){
+  padding-right: 10px;
+}
+td:nth-child(2){
+  border-right: 1px solid $color2;
+    border-left: 1px solid $color2;
+padding:10px;
+margin-left: -10px;
+box-sizing:border-box;
+}
+td:nth-child(3){
+  padding-left: 10px;
+}
+
+}
+table.gigs{
+    margin-bottom: 70px;
+
+  tr{
+    border-top: 1px solid $color2;
+    height: 50px;
+  }
+tr:last-child{
+    border-bottom: 1px solid $color2;
+    
+  }
+}
+
+////////////// BIO
+div.contain{
+  width: 700px;
+  margin: auto;
+
+}
+
+////////////// PHOTOS
+
+#photos {
+  img {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+  }
+}
+
+
+////////////// FOOTER
+footer{
+  table{
+    border-top: 1px solid $color2;
+        border-bottom: 1px solid $color2;
+
+  }
+  ul.links{
+    list-style-type: none;
+text-align: center;
+padding: 0;
+  li{
+  display: inline-block;
+
+  }
+
+
+  }
+p.by{
+  text-align: center;
+}
+
+
+
+}
